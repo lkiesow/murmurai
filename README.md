@@ -173,7 +173,7 @@ curl -X POST http://localhost:8880/v1/transcript \
   -F "speakers_expected=2"
 ```
 
-### Parameters
+#### Parameters
 
 **Input (one required):**
 
