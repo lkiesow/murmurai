@@ -207,7 +207,7 @@ curl -X POST http://localhost:8880/v1/transcript \
 | Parameter | Type | Default | Description |
 |-----------|------|---------|-------------|
 | `temperature` | float | `0.0` | Sampling temperature (`0` = greedy decoding) |
-| `temperature_increment_on_fallback` | float | `0.2` | Temperature step on decode failure |
+| `temperature_increment_on_fallback` | float | `0.2` | Amount to increment temperature by on each retry, up to 1.0 |
 | `beam_size` | integer | `5` | Beam search size |
 | `best_of` | integer | `5` | Number of sampling alternatives |
 | `patience` | float | `1.0` | Beam search patience factor |
