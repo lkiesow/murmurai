@@ -215,7 +215,7 @@ curl -X POST http://localhost:8880/v1/transcript \
 | `suppress_tokens` | string | - | Comma-separated token IDs to suppress |
 | `logprob_threshold` | float | `-1.0` | Log-probability threshold for segment filtering |
 | `compression_ratio_threshold` | float | `2.4` | Compression ratio threshold (hallucination filter) |
-| `no_speech_threshold` | float | `0.6` | Probability threshold for silence detection |
+| `no_speech_threshold` | float | `0.6` | If the no-speech probability is higher than this value, the segment is considered silent |
 | `condition_on_previous_text` | bool | `false` | Use previous output as prompt for next window |
 
 **Timestamps & Alignment:**
